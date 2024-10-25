@@ -163,7 +163,7 @@ public class SecurityConfiguration {
 
                 var newAdmin = User.builder()
                         .email("aasadh2000@gmail.com")
-                        .password(passwordEncoder.encode("123"))
+                        .password(passwordEncoder.encode("12345678"))
                         .firstName("Mohamed")
                         .lastName("Aasath")
                         .contactNo("0755701765")
@@ -185,7 +185,7 @@ public class SecurityConfiguration {
                 //test users
                 for (char c = 'a'; c <= 'z'; c++) {
 
-                    users.add(User.builder().email(c + "@gmail.com").academicYear(savedAcedemicYear).password(passwordEncoder.encode("123")).firstName(c + "Mohamed").lastName(c + "Aasath").contactNo("0755701765").createdDate(LocalDateTime.now()).status("VERIFIED").build());
+                    users.add(User.builder().email(c + "@gmail.com").academicYear(savedAcedemicYear).password(passwordEncoder.encode("12345678")).firstName(c + "Mohamed").lastName(c + "Aasath").contactNo("0755701765").createdDate(LocalDateTime.now()).status("VERIFIED").build());
 
                 }
 
